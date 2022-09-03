@@ -1,0 +1,21 @@
+{
+  "pre-commit": {
+    "enabled": true,
+    "actions": [
+      {
+        "action": "\\CaptainHook\\App\\Hook\\PHP\\Action\\Linting"
+      },
+      {
+        "action": "\\CaptainHook\\App\\Hook\\Composer\\Action\\CheckLockFile"
+      }
+    ]
+  },
+  "pre-push": {
+    "enabled": true,
+    "actions": [
+      {
+        "action": "vendor/bin/phpstan analyze"
+      }
+    ]
+  }
+}

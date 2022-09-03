@@ -1,0 +1,32 @@
+{
+    "name": "xwillq/captains-hooks",
+    "description": "Additional hooks for CaptainHook",
+    "keywords": [
+        "captainhook",
+        "git",
+        "hooks"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/xwillq/captains-hooks",
+    "authors": [
+        {
+            "name": "Pavel Shevchenko",
+            "email": "pasha.shevchenko.90@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "captainhook/captainhook": "^5.10"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.1",
+        "phpstan/phpstan": "^1.8",
+        "phpstan/phpstan-strict-rules": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xwillq\\Hooks\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
