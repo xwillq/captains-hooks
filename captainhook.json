@@ -6,6 +6,9 @@
         "action": "\\CaptainHook\\App\\Hook\\PHP\\Action\\Linting"
       },
       {
+        "action": "\\Xwillq\\Hooks\\Hooks\\FormatPHPFilesInCommit"
+      },
+      {
         "action": "\\CaptainHook\\App\\Hook\\Composer\\Action\\CheckLockFile"
       }
     ]

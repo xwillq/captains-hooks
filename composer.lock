@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c6f04126ee6db42bffaf3a90fdfbc190",
+    "content-hash": "15a89daa3fa15882435f469e7b03bcfe",
     "packages": [
         {
             "name": "captainhook/captainhook",
@@ -1103,6 +1103,56 @@
                 }
             ],
             "time": "2022-08-12T18:05:43+00:00"
+        },
+        {
+            "name": "xwillq/git-stage-editor",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xwillq/git-stage-editor.git",
+                "reference": "59cf8dc211289b54d94eee6b5ec35d33c9e07424"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xwillq/git-stage-editor/zipball/59cf8dc211289b54d94eee6b5ec35d33c9e07424",
+                "reference": "59cf8dc211289b54d94eee6b5ec35d33c9e07424",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0",
+                "symfony/process": "^6.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.1",
+                "phpstan/phpstan": "^1.8",
+                "phpstan/phpstan-strict-rules": "^1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Xwillq\\GitStageEditor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Shevchenko",
+                    "email": "pasha.shevchenko.90@gmail.com"
+                }
+            ],
+            "description": "PHP package for editing staged files in git",
+            "homepage": "https://github.com/xwillq/git-stage-editor",
+            "keywords": [
+                "git"
+            ],
+            "support": {
+                "issues": "https://github.com/xwillq/git-stage-editor/issues",
+                "source": "https://github.com/xwillq/git-stage-editor/tree/1.0.4"
+            },
+            "time": "2022-09-04T09:50:25+00:00"
         }
     ],
     "packages-dev": [

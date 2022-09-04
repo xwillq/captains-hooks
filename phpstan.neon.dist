@@ -13,3 +13,6 @@ parameters:
         check:
             tooWideThrowType: true
             missingCheckedExceptionInThrows: true
+
+    ignoreErrors:
+        - '#Short ternary operator is not allowed. Use null coalesce operator if applicable or consider using long ternary.#'
