@@ -52,3 +52,17 @@ Can be used only as `prepare-commit-msg` hook. Configuration:
     "action": "\\Xwillq\\Hooks\\Hooks\\FixPHPStormMergeMessage"
 }
 ```
+
+### RemoveCommentsFromCommitMessage
+
+Removes comments from commit message. Can be used to sanitize message before
+validation.
+
+Can be used as `pre-commit`, `prepare-commit-msg` and `commit-msg` hook.
+Configuration:
+
+```json5
+{
+    "action": "\\Xwillq\\Hooks\\Hooks\\RemoveCommentsFromCommitMessage"
+}
+```
