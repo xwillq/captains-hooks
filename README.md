@@ -39,3 +39,16 @@ Can be used only as `pre-commit` hook. Configuration:
     }
 }
 ```
+
+### FixPHPStormMergeMessage
+
+When merging, PHPStorm adds list of conflicts to commit message body as comments.
+This hook removes them.
+
+Can be used only as `prepare-commit-msg` hook. Configuration:
+
+```json5
+{
+    "action": "\\Xwillq\\Hooks\\Hooks\\FixPHPStormMergeMessage"
+}
+```

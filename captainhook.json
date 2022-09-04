@@ -20,5 +20,13 @@
         "action": "vendor/bin/phpstan analyze"
       }
     ]
+  },
+  "prepare-commit-msg": {
+    "enabled": true,
+    "actions": [
+      {
+        "action": "\\Xwillq\\Hooks\\Hooks\\FixPHPStormMergeMessage"
+      }
+    ]
   }
 }
