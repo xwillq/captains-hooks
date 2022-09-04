@@ -39,8 +39,15 @@ class FixPHPStormMergeMessage implements Action, Constrained
         }
 
         $oldMsg = $repository->getCommitMsg();
+
+        // A dumb check to filter out most messages not from PHPStorm, for example,
+        // git's default comments when calling `git merge` without `-m`
+        if (strpos($oldMsg->getRawContent(), "\n# Conflicts:") === false) {
+            return;
+        }
+
         $repository->setCommitMsg(new CommitMessage(
-            $oldMsg->getRawContent(),
+            $oldMsg->getContent(),
             $oldMsg->getCommentCharacter(),
         ));
     }
